@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div onmouseout="removeEffect()" onmouseover="hoverEffect()"
+     style="width: 200px; height: 200px; background-color: red; color: white; font-size: 20px;">
+          Hover Over Me </div>
+
+
+ <input style="margin: top 20px; padding: 10px;" type="text" id="key" onkeydown="keyDown()" onkeyup="keyUp()">
+  <script>
+
+function hoverEffect(){
+event.target.style.backgroundColor="yellow"
+}
+function removeEffect(){
+    event.target.style.backgroundColor="green"
+}
+function keyDown(){
+    event.target.style.backgroundColor="red"
+}
+function keyUp(){
+    event.target.style.backgroundColor="blue"
+}
+
+
+
+            function hoverEffect(){
+                event.target.style.backgroundColor = "yellow"
+            }
+        
+            function hoverEffect(){
+                event.target.style.backgroundColor = "green"
+            }
+          </script>
+          <script src="script2.js"></script>
+</body>
+</html>
